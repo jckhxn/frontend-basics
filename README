@@ -1,0 +1,31 @@
+This is to demomnstrate a basic understanding of the related framework.
+
+Run Sample React Project.
+cd /reactJS/basic-todo
+npm start
+* An overview of how this app was built*
+Built a standard App component that returns a input and button.
+a function to take the input and save it to state with useSate & localStorage
+Using useEffect to load any existing todos or setup the empty array.
+useRef allows you to access the value of the input set in the DOM.
+
+Run Angular
+cd /react/basic-todo
+ng serve --open
+* An overview of how this app was built*
+
+In the app.component.ts export
+initially set empty array and input value
+todos: string[] = [];
+todoText = '';
+
+Set the intial setup on render to grab and parse from localStorage
+and set todos array  if a value was found or empty if not.
+defined addTodo function
+
+in app.component.html I set the basic frontend of the component
+Using the *ngFor directive to perform an array loop, listing all todos.
+ngSubmit="addTodo()" binds to the addTodo function defined before.
+Using [(ngModel)]="todoText" we bind data to todoText in app.component.ts
+
+Imported Angular Forms Module in app.module.ts
