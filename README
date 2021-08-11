@@ -1,16 +1,21 @@
 This is to demomnstrate a basic understanding of the related framework.
 
-Run Sample React Project.
+Run Javascript Project.
+cd /Javascript
+Open .html file in web browser of choice.
+
+Run Sample React Project. 
+
 cd /reactJS/basic-todo
 npm start
-* An overview of how this app was built*
+* An overview of how this app was built *
 Built a standard App component that returns a input and button.
 a function to take the input and save it to state with useSate & localStorage
 Using useEffect to load any existing todos or setup the empty array.
 useRef allows you to access the value of the input set in the DOM.
 
 Run Angular
-cd /react/basic-todo
+cd /angular/basic-todo
 ng serve --open
 * An overview of how this app was built*
 
@@ -29,3 +34,15 @@ ngSubmit="addTodo()" binds to the addTodo function defined before.
 Using [(ngModel)]="todoText" we bind data to todoText in app.component.ts
 
 Imported Angular Forms Module in app.module.ts
+
+Run Vue.reactJS
+cd /vue/basic-todo/src
+yarn serve
+
+* An overview of how this app was built * 
+In HelloWorld.vue
+Initially set up the state and methods in the export function
+Created a Template to display the Todos and Input forms,
+v-for to loop over the list of todos parsed from localStorage
+v-bind:key="todo" binds to the state variable todos.
+v-on:submit.prevent=:"addTodo" calls the function addTodo and prevents defaults.
