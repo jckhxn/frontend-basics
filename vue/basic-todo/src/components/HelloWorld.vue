@@ -17,9 +17,10 @@ export default
       // Define state variables.
       todos:[],
       todoText:'',
-
+    
   }
   },
+  
   // Define your methods.
   methods:
   {
@@ -31,10 +32,15 @@ export default
 
   },
   mounted: function() {
+ 
     const existingTodos = localStorage.getItem('todos');
     this.todos = JSON.parse(existingTodos) || [];
 
     }
+    ,
+    props:{
+      msg:String
+    },
   }
 </script>
 <style scoped>
